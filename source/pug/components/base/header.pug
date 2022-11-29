@@ -1,0 +1,37 @@
+mixin header(headerMods)
+
+  header.header(class=headerMods)
+    .container
+      nav.main-nav
+        .main-nav__wrapper
+          ul.main-nav__list
+            li.main-nav__item
+              a.header__logo.main-nav__link.link(href="index.html", aria-label="go to main")
+                svg(width="140" height="24" viewBox="0 0 140 24")
+                  use(xlink:href="img/sprite_auto.svg#logo_welbex")
+              span.main-nav__logo-text 
+                | крупный интегратор CRM
+                br
+                | в Росcии и ещё 8 странах
+            li.main-nav__item
+              a.main-nav__link.link(href="#") Услуги
+            li.main-nav__item
+              a.main-nav__link.link(href="#") Виджеты
+            li.main-nav__item
+              a.main-nav__link.link(href="#") Интеграции
+            li.main-nav__item
+              a.main-nav__link.link(href="#") Кейсы
+            li.main-nav__item
+              a.main-nav__link.link(href="#") Сертификаты
+      nav.main-nav.main-nav--contacts
+        .main-nav__wrapper
+          ul.main-nav__list
+            li.main-nav__item
+              a.main-nav__link.link(href="tel:+75555555") +7 555-55-55
+            li.main-nav__item
+              a.main-nav__link.link
+            li.main-nav__item
+              a.main-nav__link.link
+            li.main-nav__item
+              a.main-nav__link.link
+
