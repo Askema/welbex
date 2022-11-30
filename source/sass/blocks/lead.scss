@@ -1,5 +1,12 @@
 .lead {
-  margin-top: 90px
+  margin-top: 90px;
+  margin-bottom: 124px;
+
+  @include vp-1024 {
+    & br {
+      display: none;
+    }
+  }
 }
 
 .lead__container {
@@ -23,6 +30,11 @@
   opacity: 0.5;
   filter: blur(196px);
   z-index: -1;
+
+  @include vp-1024 {
+    top: 81%;
+    left: -12%;
+  }
 }
 
 .lead__container::after {
@@ -37,6 +49,10 @@
   backdrop-filter: blur(2px);
   z-index: -1;
   border-radius: 50%;
+
+  @include vp-1024 {
+    display: none;
+  }
 }
 
 .lead__wrapper {
@@ -47,6 +63,7 @@
   font-weight: 400;
   font-size: 48px;
   line-height: 58.09px;
+  margin-top: 0;
 
   @include vp-1024 {
     font-size: 36px;
@@ -79,8 +96,6 @@
   margin: 0;
 }
 
-
-
 .lead__list--mobile .lead__item::before {
   content: '';
   position: absolute;
@@ -92,6 +107,7 @@
 }
 
 .lead h2 {
+  margin-top: 0;
   font-weight: 500;
   font-size: 18px;
   line-height: 21.78px;
