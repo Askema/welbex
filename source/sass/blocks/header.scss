@@ -1,0 +1,15 @@
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  margin-top: 46px;
+  position: relative;
+
+  @include vp-1024 {
+    margin: 0;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    padding: 0;
+  }
+}

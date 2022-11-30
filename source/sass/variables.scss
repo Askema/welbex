@@ -10,17 +10,18 @@ $color-transparent:                 rgba(255, 255, 255, 0);
 // Project palette
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
 
-$color-black-russian:               #0d0d0d;
+$color-black-russian:               #0E1014;
 $color-solitude:                    #E4E5EA;
 $color-royal-blue:                  #4077F3;
 $color-mandarian-orange:            #961A1A;
 $color-studio:                      #833AB4;
+$color-comet:                       #656566;
 
 // Gradient
 
 $yellow-to-orange:                  linear-gradient(92deg, #FCB045 27.14%, #FF3F78 121.36%), #E4E5EA;
 $yellow-to-red:                     linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%);
-$gradient-purple:                   radial-gradient(64% 64% at 27.25% 26.5%, rgba(236, 208, 255, 0.64) 0%, rgba(161, 93, 207, 0.24) 59.67%, rgba(118, 49, 164, 0.208) 78.59%, rgba(86, 24, 128, 0.232) 100%)
+$gradient-purple:                   radial-gradient(64% 64% at 27.25% 26.5%, rgba(236, 208, 255, 0.64) 0%, rgba(161, 93, 207, 0.24) 59.67%, rgba(118, 49, 164, 0.208) 78.59%, rgba(86, 24, 128, 0.232) 100%);
 $gradient-brown:                    radial-gradient(64% 64% at 27.25% 26.5%, rgba(255, 208, 208, 0.536) 0%, rgba(212, 93, 93, 0.264) 59.67%, rgba(167, 49, 49, 0.248) 78.59%, rgba(130, 25, 25, 0.248) 100%);
 
 // Typography
@@ -29,10 +30,18 @@ $gradient-brown:                    radial-gradient(64% 64% at 27.25% 26.5%, rgb
 $ff-inter:                          "Inter", "Arial", sans-serif;
 $ff-montserrat:                     "Montserrat", "Arial", sans-serif;
 
+// Animation
+// ---------------------------------
+
+$tf-default:                        ease;
+$trans-default:                     0.3s $tf-default;
+
 // Viewports
 // ---------------------------------
 
 $vp-320:                            320px;
+$vp-768:                            768px;
+$vp-1024:                           1024px;
 $vp-1440:                           1440px;
 
 

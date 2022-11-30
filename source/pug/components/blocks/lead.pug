@@ -7,22 +7,39 @@ mixin lead()
           br
           | больше 
           br
-          | с WELBEX
-        p.lead__text Развиваем и контролируем продажи за вас
+          span.lead__company с WELBEX
+        p.lead__text 
+          | Развиваем&nbsp;и&nbsp;контролируем 
+          br
+          | продажи&nbsp;за&nbsp;вас
 
-      .lead__wrapper
-        h2 Вместе с бесплатной консультацией мы дарим:
-        ul.lead__list
+      .lead__wrapper.lead__offer
+        h2 
+          | Вместе&nbsp;с&nbsp; 
+          span.lead__gradient-color бесплатной 
+            br
+            | консультацией 
+          | мы&nbsp;дарим:
+        ul.lead__list.lead__list--desktop
           li.lead__item
             h3 Виджеты
             p 30 готовых решений
           li.lead__item
             h3 Dashboard
-            p с показателями вашего бизнеса
+            p с&nbsp;показателями вашего бизнеса
           li.lead__item
             h3 Skype Аудит
-            p отдела продаж и CRM системы
+            p отдела продаж и&nbsp;CRM системы
           li.lead__item
             h3 35 дней
             p использования CRM
+        ul.lead__list.lead__list--mobile
+          li.lead__item 
+            h3 Skype аудит
+          li.lead__item 
+            h3 30 виджетов
+          li.lead__item 
+            h3 Dashboard
+          li.lead__item 
+            h3 Месяц аmoCRM
         a.btn Получить консультацию
